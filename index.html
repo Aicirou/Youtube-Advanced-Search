@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Youtube Advanced Search</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css bootstrap-datepicker.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <link href="./img/YTsearch.svg" rel="icon" type="image/svg" />
+</head>
+
+<body>
+  <div class="container">
+    <br>
+    <h1 class="text-center">
+      <img height="50" width="50" src="./img/YTsearch.svg"> Youtube Advanced Search
+    </h1>
+    <br>
+    <form id="myForm" autocomplete="off">
+      <div class="form-group">
+        <input class="form-control" type="text" id="search" placeholder="Topic" required>
+      </div>
+      <div class="form-group">
+        <label for="duration">Select Duration:</label>
+        <select class="form-control" id="duration">
+          <option>any</option>
+          <option>short</option>
+          <option>medium</option>
+          <option>long</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="order">Order:</label>
+        <select class="form-control" id="order">
+          <option>relevance</option>
+          <option>viewCount</option>
+          <option>videoCount</option>
+          <option>title</option>
+          <option>rating</option>
+          <option>date</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="fromdate">Before:</label>
+        <input type="text" class="form-control" name="" id="beforedate">
+      </div>
+      <div class="form-group">
+        <label for="fromdate">After:</label>
+        <input type="text" class="form-control" name="" id="afterdate">
+      </div>
+      <div class="form-group">
+        <button id="btn" class="btn btn-danger btn-block">
+          Search Videos
+        </button>
+      </div>
+    </form>
+    <table style="display: none;" id="table" class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>Thumbnail</th>
+          <th>Title & Description</th>
+          <th>Visit Channel</th>
+        </tr>
+      </thead>
+      <tbody id="results">
+      </tbody>
+    </table>
+    <div id="pager">
+      <ul id="pagination" class="pagination-sm"></ul>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="jquery.twbsPagination.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script>
+  $("#beforedate").datepicker({
+
+  })
+  $("#afterdate").datepicker({
+
+  })
+
+</script>
+<script src="script.js"></script>
+
+</html>
