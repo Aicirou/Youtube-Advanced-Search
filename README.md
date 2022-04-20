@@ -19,3 +19,7 @@
 ## About
 Youtube advanced search is a marketing research tool that allows you to do advanced filtering and sorting of YouTube search results. This tool is for finding sorting search results by various filters such as duration, order, Views, ratings, Channel, Subscribers count, published date, video keywords and more. 
 ### Live Demo: https://aicirou.github.io/Youtube-Advanced-Search/
+## FAQs
+1. What if Youtube API quota gets Exceeded?
+- Replace this line with new Youtube API key.
+https://github.com/Aicirou/Youtube-Advanced-Search/blob/94a3cd08355cf632e93199625c63a6d07e4e3d10/script.js#L51
