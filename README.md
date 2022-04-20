@@ -1,6 +1,6 @@
 <p align="center">
  <img width="100px" src="./img/YTsearch.svg" align="center" alt="GitHub Lookup Icon" />
- <h2 align="center">Youtube Advanced Search v1.0.8</h2>
+ <h2 align="center">Youtube Advanced Search v1.0.0</h2>
  <p align="center">advanced filtering and sorting of YouTube search results!</p>
 </p>
 
