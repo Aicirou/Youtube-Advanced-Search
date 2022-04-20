@@ -48,7 +48,7 @@ $(document).ready(function () {
 
     console.log(beforedate);
 
-    API_KEY = "AIzaSyDcosv7XDJ5PaZv3ciEQAj0lKS5N0D10uY"; // your API key
+    API_KEY = "AIzaSyANpTkJu00tCtQhpiGksHOGNfM-Qto3YMg"; // your API key
 
     var url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}
         &part=snippet&q=${search}&maxResults=${maxResults}&publishedAfter=${afterdate}&publishedBefore=${beforedate}&order=${order}&videoDuration=${duration}&type=video`;
@@ -132,7 +132,7 @@ $(document).ready(function () {
                     <span style="font-size:13px">Description: ${item.snippet.description}</span>
                     </td>
                     <td>
-                    <a target="_blank" class="btn btn-dark" href="https://www.youtube.com/channel/${item.snippet.channelId}">${item.snippet.channelTitle}</a>
+                    <a target="_blank" class="btn btn-danger btn-block" href="https://www.youtube.com/channel/${item.snippet.channelId}">${item.snippet.channelTitle}</a>
                     </td>
                     </tr>
 
