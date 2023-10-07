@@ -23,3 +23,5 @@ Youtube advanced search is a marketing research tool that allows you to do advan
 1. What if Youtube API quota gets Exceeded?
 - Replace this line with new Youtube API key.
 https://github.com/Aicirou/Youtube-Advanced-Search/blob/94a3cd08355cf632e93199625c63a6d07e4e3d10/script.js#L51
+
+https://feels-easy.games/
